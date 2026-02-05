@@ -1,0 +1,18 @@
+{
+  "name": "uploading_product_cards_from_wb_with_photos",
+  "version": "1.0.0",
+  "description": "WB product cards sync to PostgreSQL with photos",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "init-db": "node -e \"import('./src/database.js').then(m => m.initDatabase())\""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
